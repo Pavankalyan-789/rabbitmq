@@ -21,7 +21,7 @@ def send_email_task(to_email):
     try:
         with SMTP("smtp.gmail.com", 587) as smtp:
             smtp.starttls()
-            smtp.login("kalyanpavan7890@gmail.com", "hhckzxneduxoiuys")
+            smtp.login("kalyanpavan7890@gmail.com", "xhwbpdtyxymdlyam")
             smtp.sendmail("kalyanpavan7890@gmail.com", to_email, "Test email from Flask app with Celery")
             logging.info(f"Email sent to {to_email}")
     except SMTPException as e:
@@ -58,3 +58,4 @@ def get_logs():
 if __name__ == '__main__':
 
     app.run(host='0.0.0.0', port=5000)
+
